@@ -1,0 +1,75 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AddRecipe {
+    margin-bottom: 30px;
+    background: rgb(79, 79, 141);
+    border: 5px solid rgb(34, 34, 62);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.AddRecipe form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddRecipe form input {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.AddRecipe form button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2.5px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    background: rgb(165, 157, 198);
+    transition: all 1s;
+}
+
+.AddRecipe form button:hover {
+    background: rgb(103, 97, 125);
+}
+
+.RecipeItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    background: rgb(65, 105, 225);
+    border: 5px solid rgb(79, 79, 141);
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.body {
+    margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+    .AddRecipe form input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+}
